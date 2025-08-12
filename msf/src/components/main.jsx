@@ -1,4 +1,5 @@
 import { useState } from "react"
+import PersonalInfo from "./step1"
 
 export default function Form() {
 
@@ -7,7 +8,7 @@ export default function Form() {
 
     function pageDisplay(){
         if (page == 0){
-            return 
+            return <PersonalInfo/>
         }
     }
 
@@ -16,7 +17,7 @@ export default function Form() {
             <div className="sidebar"></div>
             <div className="activity-area">
                 <div className="header"></div>
-                <div className="middle"></div>
+                <div className="middle">{pageDisplay()}</div> 
                 <div className="bottom">
                     <button className="prev"
                     disabled = {page == 0}

@@ -7,9 +7,15 @@ export default function PersonalInfo () {
         <div>
             <h1></h1>
             <p></p>
-            <input type="text" />
-            <input type="email" />
-            <input type="number" />
+            <div>
+                <label htmlFor="name">name</label>
+                <input type="text" />
+                <label htmlFor="email">email</label>
+                <input type="email" />
+                <label htmlFor="number">number</label>
+                <input type="number" />
+            </div>
+          
         </div>
     )
 }
