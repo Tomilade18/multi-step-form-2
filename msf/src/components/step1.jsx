@@ -4,9 +4,8 @@ import { useState } from "react"
 
 export default function PersonalInfo () {
     return (
-        <div>
-            <h1></h1>
-            <p></p>
+        <div>     
+            <p>Please provide your name, email address, and phone number.</p>
             <div>
                 <label htmlFor="name">name</label>
                 <input type="text" />

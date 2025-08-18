@@ -1,0 +1,140 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(228, 234, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.container {
+    width: 700px;
+    height: 60vh;
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+
+.sidebar {
+     width: 30%;
+    background-image: url(/images/bg-sidebar-desktop.svg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.activity-area {
+    width: 70%;
+    padding: 0 30px 0 30px;
+    
+}
+
+/* step 2 */
+.options-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.option {
+    border: solid rgb(202, 202, 202) 1px;
+    border-radius: 5px;
+    padding: 15px;
+    height: 100px;
+}
+
+.option:hover {
+    border: solid 1px rgb(157, 1, 157);
+    cursor: pointer;
+}
+
+.option img {
+    width: 20px;
+}
+
+.option h2 {
+   font-size: 15px; 
+   padding: 0;
+   margin: 0;
+}
+
+.option p {
+    margin: 0;
+}
+
+/* .toggle-btn {
+   background-color:#b7b9ba ; 
+   border: 1px solid #aaa;
+   border-radius: 10px;
+   width: 50px;
+   height: 20px;
+   transition: background-color 0.1s ease, border-color 0.2s ease;
+   cursor: pointer;
+   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.74);
+   position: relative;
+}
+
+.toggle-btn .thumb {
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 99px;
+    transform: translateX(0);
+    transition: left 0.15s ease;
+    position: absolute;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.toggle-btn.toggled {
+    background-color: rgb(0, 162, 0);
+}
+
+.toggle-btn:hover {
+    border-radius: #6f6f6f;
+}
+
+.toggle-btn.toggled .thumb {
+    left: calc(50px -23px);
+} */
+.toggle-cont{
+    display: flex;
+    align-items: center;
+}
+
+.toggle-btn {
+   background-color: #b7b9ba; 
+   border: 1px solid #aaa;
+   border-radius: 10px;
+   width: 50px;
+   height: 20px;
+   transition: background-color 0.1s ease, border-color 0.2s ease;
+   cursor: pointer;
+   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.74);
+   position: relative;
+}
+
+.toggle-btn .thumb {
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 0.15s ease;
+}
+
+.toggle-btn.toggled {
+    background-color: rgb(0, 162, 0);
+}
+
+.toggle-btn.toggled .thumb {
+    left: calc(50px - 23px); /* moves thumb to right */
+}
