@@ -138,3 +138,22 @@
 .toggle-btn.toggled .thumb {
     left: calc(50px - 23px); /* moves thumb to right */
 }
+
+
+/* step 3 */
+
+.check-op {
+    display: flex;
+    align-items: center;
+}
+
+.check-box {
+    width: 10px;
+}
+
+.check-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

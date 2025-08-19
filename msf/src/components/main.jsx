@@ -1,6 +1,7 @@
 import { useState } from "react"
 import PersonalInfo from "./step1"
 import SelectPlan from "./step2"
+import AddOn from "./step3"
 import "./main.css"
 export default function Form() {
 
@@ -12,6 +13,8 @@ export default function Form() {
             return <PersonalInfo/>
         } else if (page === 1) {
             return <SelectPlan/>
+        } else if (page === 2) {
+            return <AddOn/>
         }
     }
 
