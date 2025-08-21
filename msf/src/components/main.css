@@ -10,7 +10,7 @@
 
 .container {
     width: 700px;
-    height: 60vh;
+    height: 50vh;
     background-color: white;
     display: flex;
     padding: 10px;
@@ -19,7 +19,7 @@
 }
 
 .sidebar {
-     width: 30%;
+     width: 40%;
     background-image: url(/images/bg-sidebar-desktop.svg);
     background-position: bottom;
     background-size: cover;
@@ -29,7 +29,7 @@
 
 .activity-area {
     width: 70%;
-    padding: 0 30px 0 30px;
+    padding: 0 30px 0 70px;
     
 }
 
@@ -145,15 +145,60 @@
 .check-op {
     display: flex;
     align-items: center;
+    border: solid 1px rgb(43, 69, 107);
+    margin: 10px 0 0 0;
+    border-radius: 10px;
+    padding: 10px;
+   
 }
 
-.check-box {
-    width: 10px;
+.check-op input[type='checkbox'] {
+   cursor: pointer;
+   opacity: 0;
+   position: absolute;
 }
 
-.check-details {
+.check-op label {
     display: flex;
-    justify-content: center;
+    cursor: pointer;
     align-items: center;
+    justify-content: space-between;
+
+}
+
+.check-op label::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    border-radius: .15em;
+    border: .05em solid purple;
+    display: inline-block;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
     
+    
+}
+
+.check-op input[type='checkbox']:checked + label::before {
+
+    content: "";
+    background-color: rgba(48, 117, 245, 0.986);
+    background-image: url(/images/icon-checkmark.svg);
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+
+.check-info h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    color: rgb(0, 42, 119);
+}
+
+.check-info p{
+    margin: 5px 0 0 0;
 }

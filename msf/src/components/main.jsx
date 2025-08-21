@@ -9,6 +9,7 @@ export default function Form() {
     const formtitles = ['Personal Info', 'Select your plan', 'Pick add-ons', 'Finishing up']
 
     function pageDisplay(){
+      
         if (page == 0){
             return <PersonalInfo/>
         } else if (page === 1) {
