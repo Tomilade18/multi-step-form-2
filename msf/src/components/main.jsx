@@ -23,23 +23,49 @@ export default function Form() {
         <div className="main">
             <div className="container">
                 <div className="sidebar">
-                    <p>Your </p>
-                    <p>Your </p>
-                    <p>Your </p>
-                    <p>Your </p>
+                    <div className="side-sum">
+                        <p className="highlight">1</p>
+                        <div className="sum-info">
+                            <h4>Step 1</h4>
+                           <p>YOUR INFO</p> 
+                        </div>
+                    </div>
+                     <div className="side-sum">
+                        <p className="highlight">2</p>
+                        <div className="sum-info">
+                            <h4>Step 2</h4>
+                           <p>SELECT PLAN</p> 
+                        </div>
+                    </div>
+                     <div className="side-sum">
+                        <p className="highlight">3</p>
+                        <div className="sum-info">
+                            <h4>Step 3</h4>
+                           <p>ADD-ONS</p> 
+                        </div>
+                    </div>
+                     <div className="side-sum">
+                        <p className="highlight">4</p>
+                        <div className="sum-info">
+                            <h4>Step 4</h4>
+                           <p>SUMMARY</p> 
+                        </div>
+                    </div>
+                    
                 </div>
                 <div className="activity-area">
-                    <h1>{formtitles[page]}</h1>
+                    <h1 className="page-titles">{formtitles[page]}</h1>
                     <div className="middle">{pageDisplay()}</div> 
                     <div className="bottom">
-                        <button className="prev"
+                        <button className="prev" type="button"
                         disabled = {page == 0}
                         onClick={() => {setPage((currPage) => currPage - 1)}}
                         style={{display: page == 0 ? "none": "inline-block" }}
                         >Go Back</button>
-                        <button className="next"
+                        <button className="next" type="button"
                         disabled = {page == formtitles.length -1}
-                        onClick={() => {setPage((currPage) => currPage + 1)}}
+                        onClick={() => {
+                            setPage((currPage) => currPage + 1)}}
                         > Next Step</button>
                     </div>
                 </div>

@@ -9,13 +9,18 @@
 }
 
 .container {
-    width: 700px;
-    height: 50vh;
+    width: 800px;
+    height: 70vh;
     background-color: white;
     display: flex;
     padding: 10px;
     border-radius: 15px;
     
+}
+
+.page-titles {
+    color: rgb(20, 20, 81);
+    font-size: 35px;
 }
 
 .sidebar {
@@ -25,7 +30,52 @@
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px;
+    padding: 20px;
 }
+
+.side-sum {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 0;
+    
+}
+
+.sum-info {
+    margin-left: 15px;
+}
+
+.sum-info h4 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: #e0e0e0;
+}
+
+.sum-info p {
+    margin: 0;
+    font-weight: 500;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    
+}
+
+.highlight {
+    border: solid 1px #fff;
+    padding: 10px;
+    border-radius: 99px;
+    font-size: 15px;
+    margin: 0;
+    width: 12px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+
 
 .activity-area {
     width: 70%;
@@ -139,13 +189,37 @@
     left: calc(50px - 23px); /* moves thumb to right */
 }
 
+/* step 1 */
+
+.input-field input {
+    display: block;
+    background-color: #fff;
+    color: black;
+    width: 90%;
+    height: 40px;
+    border: solid 1px rgba(128, 128, 128, 0.775);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 15px;
+
+}
+
+.input-field input::placeholder {
+    color: #aaaaaae4;
+}
+
+.input-field input:hover {
+    border: solid 1px purple;
+    cursor: pointer;
+}
 
 /* step 3 */
 
 .check-op {
     display: flex;
     align-items: center;
-    border: solid 1px rgb(43, 69, 107);
+    border: solid 2px rgb(160, 160, 160);
     margin: 10px 0 0 0;
     border-radius: 10px;
     padding: 10px;
