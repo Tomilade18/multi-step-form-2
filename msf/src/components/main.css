@@ -55,7 +55,7 @@
     margin: 0;
     font-weight: 500;
     color: #fff;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 1px;
     
 }
@@ -94,11 +94,13 @@
     border-radius: 5px;
     padding: 15px;
     height: 100px;
+    transition: ease 0.3s;
 }
 
 .option:hover {
     border: solid 1px rgb(157, 1, 157);
     cursor: pointer;
+    background-color: rgba(157, 1, 157, 0.03);
 }
 
 .option img {
@@ -219,7 +221,7 @@
 .check-op {
     display: flex;
     align-items: center;
-    border: solid 2px rgb(160, 160, 160);
+    border: solid 1px rgb(160, 160, 160);
     margin: 10px 0 0 0;
     border-radius: 10px;
     padding: 10px;
@@ -263,6 +265,10 @@
     /* display: flex;
     align-items: center;
     justify-content: center; */
+}
+
+.check-op:hover {
+    border:solid 1px rgb(157, 1, 157);
 }
 
 
